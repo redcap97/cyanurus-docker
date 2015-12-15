@@ -2,6 +2,7 @@ FROM ubuntu
 MAINTAINER Akira Midorikawa <redcap97@gmail.com>
 
 ENV CYANURUS_VERSION 0.1.0
+ENV QEMU_AUDIO_DRV none
 
 RUN apt-get install -y curl xz-utils qemu-system-arm
 RUN curl -sSfL https://github.com/redcap97/cyanurus/releases/download/v${CYANURUS_VERSION}/cyanurus-${CYANURUS_VERSION}.tar.xz | tar Jx -C /
