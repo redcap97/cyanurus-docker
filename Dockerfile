@@ -1,7 +1,7 @@
 FROM ubuntu
 MAINTAINER Akira Midorikawa <redcap97@gmail.com>
 
-ENV CYANURUS_VERSION 0.2.0
+ENV CYANURUS_VERSION 0.3.0
 ENV QEMU_AUDIO_DRV none
 
 RUN apt-get install -y curl xz-utils qemu-system-arm
